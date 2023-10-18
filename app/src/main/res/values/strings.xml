@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">offices</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_web_client_id">963376579679-e09vhbgabtnc4pd4utd60dgid6f15al6.apps.googleusercontent.com</string>
 </resources>

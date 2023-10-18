@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
         firebaseAuth  = FirebaseAuth.getInstance();
         loginUser();
+//        if(firebaseAuth.getCurrentUser() != null){
+//            startActivity(new Intent(MainActivity.this, MapsActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+//        } else {
+//            loginUser();
+//        }
+
     }
 
     private void loginUser(){
@@ -108,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(MainActivity.this,"Logging Success",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(MainActivity.this, MapsActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-
                         } else {
                             Toast.makeText(MainActivity.this,"Failed to login",Toast.LENGTH_SHORT).show();
                         }
